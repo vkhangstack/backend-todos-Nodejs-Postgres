@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send("OK");
+  res.redirect("/todos");
 });
 app.use(todoRouter);
 
